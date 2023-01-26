@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: titleFont;
+        src: url('data:font/truetype;charset=utf-8;base64,strTitleFont');
+      }
+
+      @font-face {
+        font-family: paragraphFont;
+        src: url('data:font/truetype;charset=utf-8;base64,strParagraphFont');
+      }
+
+      html {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      body {
+        flex-grow: 1;
+        margin: 0;
+      }
+
+      .page-container {
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url("data:image/png;base64,strBackgroundImage");
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-color: #f4dbd3;
+      }
+
+      .pdf-title {
+        font-family: titleFont;
+        font-size: 8em;
+        margin-bottom: 0.6em;
+      }
+
+      .client-name {
+        font-family: paragraphFont;
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+      
+      .company-name {
+        font-family: paragraphFont;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="pdf-title">THE SOL<br />GUIDE</div>
+      <div class="client-name">clientName</div>
+      <div class="company-name">the cosmic laundry</div>
+    </div>
+  </body>
+</html>
